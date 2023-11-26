@@ -59,7 +59,7 @@ npm run build
 
 ## Version
 
-0.0.0 (Consider updating this based on your release version)
+1.0
 
 ## Dependencies
 

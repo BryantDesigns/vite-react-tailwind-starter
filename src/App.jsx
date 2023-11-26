@@ -3,14 +3,13 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 
 function App() {
-    const [ count, setCount ] = useState(0);
+    const [count, setCount] = useState(0);
 
     // Below is an example of how to use environment variables
     const apiKey = import.meta.env.VITE_API_KEY;
-    console.log(apiKey); // Logs the value of VITE_API_KEY from .
-    
+    console.log(apiKey); // Logs the value of VITE_API_KEY from .env
     return (
-        <>
+        <div className="h-screen bg-gray-200">
             <div className="flex items-center justify-between p-4">
                 <a
                     href="https://vitejs.dev"
@@ -40,6 +39,19 @@ function App() {
             <h1 className="my-4 text-center text-3xl font-bold">
                 Vite + React + Tailwind
             </h1>
+            <p className="text-center text-lg">
+                A streamlined setup for your modern web development needs. Learn
+                more about my work at{' '}
+                <a
+                    href="https://tylerbryant.dev/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline"
+                >
+                    tylerbryant.dev
+                </a>
+                .
+            </p>
             <div className="mx-4 rounded-lg bg-white p-6 shadow-lg">
                 <button
                     onClick={() => setCount((count) => count + 1)}
@@ -50,13 +62,22 @@ function App() {
                 <p className="mt-4">
                     Edit{' '}
                     <code className="rounded bg-gray-100 p-1">src/App.jsx</code>{' '}
-                    and save to test HMR
+                    and save to test (
+                    <a
+                        href="https://vitejs.dev/guide/features.html#hot-module-replacement"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline"
+                    >
+                        Hot Module Replacement - HMR
+                    </a>
+                    )
                 </p>
             </div>
             <p className="mt-4 text-center">
-                Click on the Vite and React logos to learn more
+                Click on the Vite and React logos to go to their documentation.
             </p>
-        </>
+        </div>
     );
 }
 
