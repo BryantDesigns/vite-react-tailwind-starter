@@ -1,0 +1,6 @@
+# Ignore these files for formatting
+/node_modules
+/dist
+/.cache
+*.min.js
+*.min.css
